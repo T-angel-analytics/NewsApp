@@ -1,0 +1,38 @@
+nav, .queries{
+    background-color:darkred;
+    color:white;
+    height: 50px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+.primary {
+    margin: 30px 0px 0px 0px;
+    }
+.queries{
+    height: 500px;
+    margin: 0px
+
+}
+main{
+    border: 1px solid black;
+}
+
+
+
+
+.newsBox{
+    margin: 10px;
+    height: 300px;
+     width: 300px;
+
+}
+.headline-img{
+    height:200px;
+}
+
+.headline{
+    font-size: 1.3em;
+}

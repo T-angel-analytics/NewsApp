@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/news.css">
+    <title>NEWS</title>
+</head>
+    <body >
+    <div class="containerfluid-">
+        <nav>
+            <ul>
+                <li>Home</li>
+                 <li>Business</li>
+                 <li>Technology</li>
+                 <li>Politics</li>
+                 <li>Login</li>
+            </ul>
+        </nav>
+        <div class="row primary">
+            <aside class="col-3 queries">
+                <form name="queryInput" action="" onsubmit='return false'>
+                    <!-- onsubmit &ndash;&gt; attribute prevents the form from automatically refreshing the webpage upon submission,which it does because the form doesn't have a handler... look into this more later-->
+
+                    <label for="topics"></label>
+                    <input id="topics" type="text" class="GetQuery" name="Topics" value="Top News"
+                           defaultValue="Top News">
+
+                    <select class="GetQuery" name="Domain" id="domain">
+                        <option value="Any" selected>Any Source</option>
+                        <option value="npr.org">NPR</option>
+                        <option value="cnn.com">CNN</option>
+                        <option value="wsj.com">WSJ</option>
+                        <!-- Generate robust options list-->
+                    </select>
+
+                    <div>
+                        <input type="radio" name="TopOrAll" id="searchAll" value="Search All">
+                        <label for="searchAll">Search All</label><br>
+
+                        <input type="radio" name="TopOrAll" id="topHeadlines" value="Top Headlines Only" checked>
+                        <label for="topHeadlines">Top Headlines Only"</label><br>
+                    </div>
+
+                    <div>
+                        <input type="date" class="GetQuery Date StartDate" name="StartDate" id="startD">
+                        <input type="date" class="GetQuery Date EndDate" name="EndDate" id="endD">
+                    </div>
+                    <input type="reset">
+                    <input type="submit" class='submitQuery' value="Submit">
+                </form>
+            </aside>
+
+            <main class="col-6 newsContainer ">
+                <div class="newsBox">
+                    <img class="headline-img" src="https://www.nbcsports.com/sites/rsnunited/files/styles/metatags_opengraph/public/article/hero/Steph-LeBron-FreeThrow-Getty_0.jpg" alt="">
+                    <h3 class="headline">TESTING</h3>
+                    <span class="headline-source"> test</span>
+                    <span class="headline-date">tester</span>
+                </div>
+            </main>
+
+            <aside class=" col-3 favoriteTopics hidden">
+                <!--   will be hidden until user logs in    -->
+                <h1>STUFF</h1>
+            </aside>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="news.js"></script>
+<!--    <script src="testURLMaker.js"></script>-->
+    </body>
+</html>
+
+  <!--<select name="Date" id="month" >
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+            </select>-->
