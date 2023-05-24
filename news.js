@@ -168,10 +168,11 @@ class NewsBox {
         $('.newsContainer').append(
             $('<div>', {class:'newsBox'}).append([
                 $('<img>', {class:'headline-img', src: this.headlineImg }),
-                $('<a>',{class: 'headlineUrl', href: this.headlineUrl}).append(
-                $('<h3>', {class:'headline', text: this.headline})),
                 $('<span>', {class:'headline-source', text: this.headlineSource}),
-                $('<span>', {class:'headline-date', text: this.headlineDate})
+                $('<span>', {class:'headline-date', text: this.headlineDate}),
+                $('<a>',{class: 'headlineUrl', href: this.headlineUrl}).append(
+                $('<h3>', {class:'headline', text: this.headline}))
+               
                 ])
         )
     }

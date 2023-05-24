@@ -1,38 +1,61 @@
-nav, .queries{
+nav, .queries, .aside2{
     background-color:darkred;
     color:white;
+ 
+}
+
+nav{
     height: 50px;
+    margin: 10px 0px 10px 0px;
 }
 
 nav ul li{
     display: inline;
-    margin: 10px;
+    margin: 15px;
+    ;
+
 }
+
 .primary {
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     }
+
 .queries{
-    height: 500px;
-    margin: 0px
+    /* height: 500px; */
+    margin-bottom: 0px;
 
 }
+
+
+
 main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+  
 }
-
-
 
 
 .newsBox{
-    margin: 10px;
-    height: 300px;
-     width: 300px;
+   /* margin: 10px; */
+    height: 450px;
+    width:inherit;
+    /* border: 1px solid red; */
 
 }
 .headline-img{
-    height:200px;
+    height:80%;
+    width: inherit;
+    object-fit:cover;
+
+ 
 }
 
 .headline{
-    font-size: 1.3em;
+    font-size: 1em;
+  
 }
+
+main span {
+    font-size:.8em;
+   
+}
+
