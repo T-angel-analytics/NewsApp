@@ -20,9 +20,10 @@ nav ul li{
     margin: 0px 0px 0px 0px;
     }
 
-.queries{
+.queries *{
+    margin-bottom: 10px;
     /* height: 500px; */
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 
 }
 

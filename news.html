@@ -22,11 +22,11 @@
                 <form name="queryInput" action="" onsubmit='return false'>
                     <!-- onsubmit &ndash;&gt; attribute prevents the form from automatically refreshing the webpage upon submission,which it does because the form doesn't have a handler... look into this more later-->
 
-                    <label for="topics"></label>
-                    <input id="topics" type="text" class="GetQuery" name="Topics" value="Top News"
+                    <label for="topics"  class="col-form-label">Search Topic:</label>
+                    <input id="topics" type="text" class="form-control GetQuery" name="Topics" value="Top News"
                            defaultValue="Top News">
 
-                    <select class="GetQuery" name="Domain" id="domain">
+                    <select class="form-control GetQuery" name="Domain" id="domain">
                         <option value="Any" selected>Any Source</option>
                         <option value="npr.org">NPR</option>
                         <option value="cnn.com">CNN</option>
@@ -34,17 +34,21 @@
                         <!-- Generate robust options list-->
                     </select>
 
-                    <div>
-                        <input type="radio" name="TopOrAll" id="searchAll" value="Search All">
-                        <label for="searchAll">Search All</label><br>
+                    <div class="form-check" >
+                       
+                        <input class= "form-check-input" type="radio" name="TopOrAll"  id="searchAll" value="Search All">
+                        <label class= "form-check-label" for="searchAll"  >Search All</label>
+                    </div>    
+                    <div class="form-check" >
+                    
+                        <input class= "form-check-input" type="radio" name="TopOrAll"  id="topHeadlines" value="Top Headlines Only" checked>
+                        <label class= "form-check-label" for="topHeadlines" >Top Headlines Only"</label>
 
-                        <input type="radio" name="TopOrAll" id="topHeadlines" value="Top Headlines Only" checked>
-                        <label for="topHeadlines">Top Headlines Only"</label><br>
                     </div>
 
                     <div>
-                        <input type="date" class="GetQuery Date StartDate" name="StartDate" id="startD">
-                        <input type="date" class="GetQuery Date EndDate" name="EndDate" id="endD">
+                        <input type="date" class="form-control GetQuery Date StartDate" name="StartDate" id="startD">
+                        <input type="date" class="form-control GetQuery Date EndDate" name="EndDate" id="endD">
                     </div>
                     <input type="reset">
                     <input type="submit" class='submitQuery' value="Submit">
