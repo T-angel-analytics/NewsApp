@@ -1,3 +1,9 @@
+/* Imports */
+@import "bootstrap/less/bootstrap.less";
+
+
+/* Primary styling */
+
 nav, .queries, .aside2{
     background-color:darkred;
     color:white;
@@ -20,14 +26,17 @@ nav ul li{
     margin: 0px 0px 0px 0px;
     }
 
+/*=========== Query Input Styling column 1  ====== */
 .queries *{
     margin-bottom: 10px;
     /* height: 500px; */
-    /* margin-bottom: 0px; */
-
 }
 
+.queries *{
+    .btn-outline.warning
+}
 
+/*=========== News Box Styling column 2  ====== */
 
 main{
     /* border: 1px solid black; */

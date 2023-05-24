@@ -19,7 +19,7 @@
         </nav>
         <div class="row primary">
             <aside class="col-3 queries">
-                <form name="queryInput" action="" onsubmit='return false'>
+                <form class ="queries" name="queryInput" action="" onsubmit='return false'>
                     <!-- onsubmit &ndash;&gt; attribute prevents the form from automatically refreshing the webpage upon submission,which it does because the form doesn't have a handler... look into this more later-->
 
                     <label for="topics"  class="col-form-label">Search Topic:</label>
@@ -50,8 +50,8 @@
                         <input type="date" class="form-control GetQuery Date StartDate" name="StartDate" id="startD">
                         <input type="date" class="form-control GetQuery Date EndDate" name="EndDate" id="endD">
                     </div>
-                    <input type="reset">
-                    <input type="submit" class='submitQuery' value="Submit">
+                    <input type="reset" class ="btn btn-light">
+                    <input type="submit" class="btn btn-light  submitQuery" value="Submit">
                 </form>
             </aside>
 
